@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 :root {
@@ -28,6 +29,7 @@ body {
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
+  height: 100vh;
 }  
 /*background: url(./assets/bg-mobile.jpg) no-repeat top center/cover;*/
 
@@ -38,7 +40,7 @@ body * {
 
 #container {
   width: 100%;
-  max-width: 400px;
+  max-width: 588px;
   margin: 56px auto 0px;
   padding: 0 24px;
 }
@@ -46,6 +48,7 @@ body * {
 /*profile*/
 #profile {
   text-align: center;
+  padding: 24px;
 }
 
 #profile img {
@@ -81,11 +84,11 @@ body * {
   left: 0;
   z-index: 1;
   transform: translateY(-50%);
-  animation: slide-back .4s;
+  animation: slide-back .2s;
 }
 
 .light #switch button {
-  animation: slide-in .4s forwards;
+  animation: slide-in .2s forwards;
 }
 
 #switch button:hover {
@@ -103,7 +106,6 @@ body * {
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
 }
-
 
 /*links*/
 ul {
@@ -161,7 +163,6 @@ ul li a:hover{
 
 #social-links a:hover{
   background-color: var(--highlight-color);
-  border-radius: 50%;
 }
 
 footer{
